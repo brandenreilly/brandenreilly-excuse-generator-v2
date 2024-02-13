@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Branden's Excuse Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -14,15 +14,24 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
+      <div class="row">
+        <h1 class="mt-5">OMG! You will not believe me but...</h1>
+        <p class="mt-4" id="excuseHTML">A dog ate my homework.</p>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button
+            class="btn btn-primary btn-lg mt-5 excuseBTN"
+            id="excuseBTN"
+            onclick="excuseGenerator()"
+          >
+            Generate New Excuse
+          </button>
+        </div>
+      </div>
       <div class="fixed-bottom p-4">
         Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+        <a href="https://github.com/brandenreilly">Branden Reilly</a>
       </div>
     </div>
   </body>
